@@ -1,0 +1,53 @@
+.rightAlign {
+    text-align: right;
+    vertical-align: middle !important;
+}
+
+.hour1stHalf {
+    border-bottom-style: dotted !important;
+    position: relative !important;
+}
+
+.hour2ndHalf {
+    border-top-style: dotted !important;
+    position: relative !important;
+}
+
+.tableContainer {
+    position: relative !important;
+    overflow-x: hidden;
+    border: 1px solid #B1ACAC;
+}
+
+.eventDiv {
+    background-color: black !important;
+    width: 97%;
+}
+
+.eventTable {
+    position: absolute;
+}
+
+.eventTd {
+    border: 0px !important;
+}
+
+.dateDiv {
+    margin-bottom: 9px;
+}
+
+.displayDate {
+    font-weight: bold;
+}
+
+#datepicker {
+    display: none;
+}
+
+.displayDateSpan {
+    margin-left: 6px;
+}
+
+.calIcon {
+    margin-right: 4px !important;
+}

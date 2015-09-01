@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap2-toggle.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/Calendar.css">
+    <title>My Calendar</title>
+</head>
+<body>
+    <div class="container controlsDiv ">
+        <h1 class="text-center">My Calendar</h1>
+        <div>
+            <span class="pull-left">
+                <input type="button" id="todayDate" class="btn btn-default" value="Today">
+                <span class="btn-group">
+                    <input type="button" class="btn btn-default" title="Previous Date" id="previousDate" value="<">
+                    <input type="button" class="btn btn-default" title="Next Date" id="nextDate" value=">">
+                </span>
+                <span class="displayDateSpan">
+                    <span class="displayDate">&nbsp;</span>
+                    <input type="text" disabled id="datepicker" value="">
+                </span>
+            </span>
+            <span class="pull-right"><input type="checkbox" id="12Hrs" checked data-toggle="toggle" data-onstyle="warning" data-offstyle="info" data-on="12 Hrs" data-off="24 Hrs" data-width="75" data-height="31"></span>
+
+        </div>
+    </div>
+    <div class="container tableContainer">
+
+        <table class="table table-bordered col-xs-12">
+            <thead>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"><span class="12Hour">12 AM</span><span class="24Hour">00</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="0">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf " data-hour="0"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign" align="right" scope="row"><span class="12Hour">1 AM</span><span class="24Hour">01</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="1"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="1">&nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">2 AM</span><span class="24Hour">02</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="2"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="2"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">3 AM</span><span class="24Hour">03</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="3"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="3"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">4 AM</span><span class="24Hour">04</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="4"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="4"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">5 AM</span><span class="24Hour">05</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="5"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="5"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">6 AM</span><span class="24Hour">06</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="6"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="6"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">7 AM</span><span class="24Hour">07</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="7"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="7"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">8 AM</span><span class="24Hour">08</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="8"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="8"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">9 AM</span><span class="24Hour">09</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="9"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="9"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">10 AM</span><span class="24Hour">10</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="10"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="10"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">11 AM</span><span class="24Hour">11</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="11"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="11"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">12 PM</span><span class="24Hour">12</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="12"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="12"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">1 PM</span><span class="24Hour">13</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="13"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="13"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"><span class="12Hour">2 PM</span><span class="24Hour">14</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="14"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="14"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">3 PM</span><span class="24Hour">15</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="15"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="15"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"><span class="12Hour">4  PM</span><span class="24Hour">16</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="16"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="16"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">5 PM</span><span class="24Hour">17</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="17"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="17"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">6 PM</span><span class="24Hour">18</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="18"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="18"> &nbsp;</td>
+                </tr>
+
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">7 PM</span><span class="24Hour">19</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="19"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="19"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">8 PM</span><span class="24Hour">20</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="20"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="20"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">9 PM</span><span class="24Hour">21</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="21"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="21"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">10 PM</span><span class="24Hour">22</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="22"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="22"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-nowrap  col-xs-1 rightAlign  " align="right" scope="row"> <span class="12Hour">11 PM</span><span class="24Hour">23</span></th>
+                    <td class="text-nowrap  col-xs-11 hour1stHalf   " data-hour="23"> &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap  col-xs-11 hour2ndHalf  " data-hour="23"> &nbsp;</td>
+
+                </tr>
+            </tbody>
+        </table>
+        <table class="table eventTable col-xs-12">
+            <thead>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="text-nowrap  col-xs-1 eventTd" align="right" scope="row">&nbsp;</th>
+                    <td class="text-nowrap  col-xs-11 eventTd mainEventTd"></td>
+                </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap2-toggle.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/sample-data.json"></script>
+    <script type="text/javascript" src="./js/Calendar.js"></script>
+</body>
+</html>
